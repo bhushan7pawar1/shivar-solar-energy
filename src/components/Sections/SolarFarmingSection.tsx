@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Landmark, TrendingUp, Shield, Leaf, Calendar, DollarSign } from "lucide-react";
+import { Landmark, TrendingUp, Shield, Leaf, Calendar, IndianRupee } from "lucide-react";
 
 const SolarFarmingSection = () => {
   const farmingData = {
@@ -14,7 +14,7 @@ const SolarFarmingSection = () => {
 
   const benefits = [
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       title: "Steady Annual Returns",
       description: "Generate consistent income without daily effort or operational hassles"
     },
@@ -80,7 +80,7 @@ const SolarFarmingSection = () => {
                     <div className="text-xl font-bold text-secondary">{farmingData.returnPeriod}</div>
                   </div>
                 </div>
-                
+
                 <div className="bg-accent-light p-4 rounded-lg">
                   <div className="text-sm text-muted-foreground mb-2">PPA Buyer</div>
                   <div className="text-sm text-foreground">{farmingData.ppaBuyer}</div>
